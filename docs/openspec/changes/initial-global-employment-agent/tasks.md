@@ -22,19 +22,19 @@
 - [x] 创建 `backend/app/api/routes_countries.py`，提供 `GET /api/countries` 和 `GET /api/policies/{country}`。
 - [x] 创建 `backend/tests/test_policy_repository.py`。
 - [x] 运行 `pytest backend/tests/test_policy_repository.py -v`。
-- [ ] 提交节点：`git add .gitignore backend docs && git commit -m "feat: add policy repository"`
+- [x] 提交节点：`git add .gitignore backend docs && git commit -m "feat: add policy repository"`
 
 ## Git Node 3: Cost Calculator
 
-- [ ] 创建 `backend/app/domain/cost_calculator.py`。
-- [ ] 创建 `backend/app/tools/employment_cost.py`。
-- [ ] 在 `backend/app/models/response.py` 中创建成本明细 response models。
-- [ ] 实现缴费上限处理。
-- [ ] 实现月度和年度总成本。
-- [ ] 使用 normalized fixture values 实现法定和市场惯例奖金分摊。
-- [ ] 创建 `backend/tests/test_cost_calculator.py`。
-- [ ] 运行 `pytest backend/tests/test_cost_calculator.py -v`。
-- [ ] 提交节点：`git add backend && git commit -m "feat: calculate employment cost"`
+- [x] 创建 `backend/app/domain/cost_calculator.py`。
+- [x] 创建 `backend/app/tools/employment_cost.py`。
+- [x] 在 `backend/app/models/response.py` 中创建成本明细 response models。
+- [x] 实现缴费上限处理。
+- [x] 实现月度和年度总成本。
+- [x] 使用 normalized fixture values 实现法定和市场惯例奖金分摊。
+- [x] 创建 `backend/tests/test_cost_calculator.py`。
+- [x] 运行 `pytest backend/tests/test_cost_calculator.py -v`。
+- [ ] 提交节点：`git add backend docs && git commit -m "feat: calculate employment cost"`
 
 ## Git Node 4: Compliance Checker
 
