@@ -79,28 +79,28 @@
 - [x] 对结构化失败发送 `agent.error`。
 - [x] 添加 backend tests，验证 event 顺序。
 - [x] 运行 `pytest backend/tests/test_agent_orchestrator.py -v`。
-- [ ] 提交节点：`git add backend docs && git commit -m "feat: stream agent trace events"`
+- [x] 提交节点：`git add backend docs && git commit -m "feat: stream agent trace events"`
 
 ## Git Node 7: React Frontend
 
-- [ ] 在 `frontend/` 下创建 Vite React TypeScript 项目。
-- [ ] 创建 `frontend/src/types/agent.ts`。
-- [ ] 创建 `frontend/src/types/plan.ts`。
-- [ ] 创建 `frontend/src/app/api.ts`。
-- [ ] 创建 `frontend/src/components/HiringRequestForm.tsx`。
-- [ ] 创建 `frontend/src/components/AgentTimeline.tsx`。
-- [ ] 创建 `frontend/src/components/CostBreakdownTable.tsx`。
-- [ ] 创建 `frontend/src/components/ComplianceChecklist.tsx`。
-- [ ] 创建 `frontend/src/components/EmploymentTermsSummary.tsx`。
-- [ ] 创建 `frontend/src/components/CountryComparison.tsx`。
-- [ ] 创建 `frontend/src/components/EmptyState.tsx`。
-- [ ] 创建 `frontend/src/components/ErrorState.tsx`。
-- [ ] 创建 `frontend/src/styles/globals.css`。
-- [ ] 在 `frontend/src/app/App.tsx` 中串联完整应用。
-- [ ] 添加 Singapore、Vietnam 合规冲突、Singapore/Vietnam 对比三个示例 prompt。
-- [ ] 添加 frontend tests，覆盖成本表和合规结果渲染。
-- [ ] 运行 `npm test -- --run`。
-- [ ] 提交节点：`git add frontend && git commit -m "feat: build employment agent UI"`
+- [x] 在 `frontend/` 下创建 Vite React TypeScript 项目。
+- [x] 创建 `frontend/src/types/agent.ts`。
+- [x] 创建 `frontend/src/types/plan.ts`。
+- [x] 创建 `frontend/src/app/api.ts`。
+- [x] 创建 `frontend/src/components/HiringRequestForm.tsx`。
+- [x] 创建 `frontend/src/components/AgentTimeline.tsx`。
+- [x] 创建 `frontend/src/components/CostBreakdownTable.tsx`。
+- [x] 创建 `frontend/src/components/ComplianceChecklist.tsx`。
+- [x] 创建 `frontend/src/components/EmploymentTermsSummary.tsx`。
+- [x] 创建 `frontend/src/components/CountryComparison.tsx`。
+- [x] 创建 `frontend/src/components/EmptyState.tsx`。
+- [x] 创建 `frontend/src/components/ErrorState.tsx`。
+- [x] 创建 `frontend/src/styles/globals.css`。
+- [x] 在 `frontend/src/app/App.tsx` 中串联完整应用。
+- [x] 添加 Singapore、Vietnam 合规冲突、Singapore/Vietnam 对比三个示例 prompt。
+- [x] 添加 frontend tests，覆盖成本表和合规结果渲染。
+- [x] 运行 `npm test -- --run`。
+- [ ] 提交节点：`git add frontend docs && git commit -m "feat: build employment agent UI"`
 
 ## Git Node 8: Docker Compose 和 README
 
