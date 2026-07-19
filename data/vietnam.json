@@ -1,0 +1,69 @@
+{
+  "country": "Vietnam",
+  "country_code": "VN",
+  "currency": "VND",
+  "employer_contributions": [
+    {
+      "name": "社会保险（雇主缴纳）",
+      "rate": 0.175,
+      "monthly_salary_cap": 46800000,
+      "notes": "缴费基数上限为基础工资的 20 倍（本模拟数据固定为 46,800,000 VND/月）。"
+    },
+    {
+      "name": "医疗保险（雇主缴纳）",
+      "rate": 0.03,
+      "monthly_salary_cap": 46800000,
+      "notes": "与社保共用基数上限。"
+    },
+    {
+      "name": "失业保险（雇主缴纳）",
+      "rate": 0.01,
+      "monthly_salary_cap": 99200000,
+      "notes": "基数上限为地区最低工资的 20 倍（本模拟数据固定为 99,200,000 VND/月）。"
+    },
+    {
+      "name": "工会经费",
+      "rate": 0.02,
+      "monthly_salary_cap": 46800000,
+      "notes": "雇主按社保缴费基数的 2% 缴纳工会经费。"
+    }
+  ],
+  "thirteenth_month": {
+    "statutory": false,
+    "customary": true,
+    "notes": "第 13 月薪非法定，但为极普遍的市场惯例（通常在农历新年前发放），不提供会显著影响招聘竞争力。"
+  },
+  "annual_leave": {
+    "statutory_min_days": 12,
+    "market_typical_days": 12,
+    "notes": "法定 12 天，每满 5 年工龄增加 1 天。"
+  },
+  "probation": {
+    "max_months": 2,
+    "typical_months": 2,
+    "notes": "需要大专及以上学历的岗位试用期上限 60 天；企业管理者岗位上限 180 天。本模拟数据按普通专业岗位取 2 个月。试用期工资不得低于正式工资的 85%。"
+  },
+  "termination_notice": {
+    "rules": [
+      { "tenure": "无固定期限合同", "notice": "45 天" },
+      { "tenure": "固定期限合同（12-36 个月）", "notice": "30 天" },
+      { "tenure": "固定期限合同（不满 12 个月）", "notice": "3 个工作日" }
+    ],
+    "notes": "越南解雇员工需有法定事由，单方解除限制较严格。"
+  },
+  "minimum_wage": {
+    "monthly": 4960000,
+    "notes": "按第一区（河内/胡志明市区）标准，本模拟数据取 4,960,000 VND/月。"
+  },
+  "income_tax_brackets_monthly": [
+    { "up_to": 5000000, "rate": 0.05 },
+    { "up_to": 10000000, "rate": 0.1 },
+    { "up_to": 18000000, "rate": 0.15 },
+    { "up_to": 32000000, "rate": 0.2 },
+    { "up_to": 52000000, "rate": 0.25 },
+    { "up_to": 80000000, "rate": 0.3 },
+    { "up_to": null, "rate": 0.35 }
+  ],
+  "public_holidays_per_year": 11,
+  "standard_working_hours_per_week": 48
+}

@@ -1,0 +1,59 @@
+{
+  "country": "Singapore",
+  "country_code": "SG",
+  "currency": "SGD",
+  "employer_contributions": [
+    {
+      "name": "CPF 公积金（雇主缴纳）",
+      "rate": 0.17,
+      "monthly_salary_cap": 7400,
+      "notes": "适用于 55 岁及以下员工。真实规则仅适用于公民/PR，本模拟数据简化为所有员工适用。缴费基数以月薪与上限孰低计算。"
+    },
+    {
+      "name": "SDL 技能发展税",
+      "rate": 0.0025,
+      "monthly_salary_cap": 4500,
+      "notes": "按月薪 0.25% 计，基数上限 4500 SGD。"
+    }
+  ],
+  "thirteenth_month": {
+    "statutory": false,
+    "customary": true,
+    "notes": "AWS（第 13 月薪/年终花红）为市场普遍惯例，但非法定强制。"
+  },
+  "annual_leave": {
+    "statutory_min_days": 7,
+    "market_typical_days": 14,
+    "notes": "法定最低 7 天（首年），市场惯例 14-18 天。"
+  },
+  "probation": {
+    "max_months": null,
+    "typical_months": 3,
+    "notes": "法律无强制上限，市场惯例 3-6 个月。"
+  },
+  "termination_notice": {
+    "rules": [
+      { "tenure": "服务不满 26 周", "notice": "1 天" },
+      { "tenure": "26 周 - 2 年", "notice": "1 周" },
+      { "tenure": "2 - 5 年", "notice": "2 周" },
+      { "tenure": "5 年以上", "notice": "4 周" }
+    ],
+    "notes": "以雇佣合同约定优先，此为法定最低标准。"
+  },
+  "minimum_wage": {
+    "monthly": null,
+    "notes": "新加坡无全国法定最低工资（部分行业有渐进式薪金模式，本模拟数据不涉及）。"
+  },
+  "income_tax_brackets_annual": [
+    { "up_to": 20000, "rate": 0.0 },
+    { "up_to": 30000, "rate": 0.02 },
+    { "up_to": 40000, "rate": 0.035 },
+    { "up_to": 80000, "rate": 0.07 },
+    { "up_to": 120000, "rate": 0.115 },
+    { "up_to": 160000, "rate": 0.15 },
+    { "up_to": 200000, "rate": 0.18 },
+    { "up_to": null, "rate": 0.24 }
+  ],
+  "public_holidays_per_year": 11,
+  "standard_working_hours_per_week": 44
+}

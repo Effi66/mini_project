@@ -1,0 +1,13 @@
+project: global-employment-agent
+description: 基于本地政策 fixture 生成可审计全球雇佣方案的客户侧 Agent。
+spec_root: docs/openspec/specs
+change_root: docs/openspec/changes
+status: planning
+owners:
+  - local-codex-user
+principles:
+  - 政策结论只能来自本地数据文件。
+  - 雇主成本计算必须由确定性代码完成，不能交给 LLM。
+  - 合规检查必须包含 citation 和替代建议。
+  - 前端必须展示客户可读方案，不能把 raw JSON dump 当作主要体验。
+

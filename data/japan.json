@@ -1,0 +1,73 @@
+{
+  "country": "Japan",
+  "country_code": "JP",
+  "currency": "JPY",
+  "employer_contributions": [
+    {
+      "name": "健康保险（雇主缴纳）",
+      "rate": 0.05,
+      "monthly_salary_cap": 1390000,
+      "notes": "总费率约 10%（东京协会健保），雇主雇员各半；标准报酬月额上限 1,390,000 JPY。"
+    },
+    {
+      "name": "厚生年金（雇主缴纳）",
+      "rate": 0.0915,
+      "monthly_salary_cap": 650000,
+      "notes": "总费率 18.3%，雇主雇员各半；标准报酬月额上限 650,000 JPY。"
+    },
+    {
+      "name": "雇用保险（雇主缴纳）",
+      "rate": 0.0095,
+      "monthly_salary_cap": null,
+      "notes": "一般行业雇主费率 0.95%，无基数上限。"
+    },
+    {
+      "name": "劳灾保险（雇主全额缴纳）",
+      "rate": 0.003,
+      "monthly_salary_cap": null,
+      "notes": "办公室岗位按 0.3% 计，全额由雇主承担。"
+    },
+    {
+      "name": "儿童抚养拠出金（雇主全额缴纳）",
+      "rate": 0.0036,
+      "monthly_salary_cap": 650000,
+      "notes": "与厚生年金共用标准报酬月额上限。"
+    }
+  ],
+  "thirteenth_month": {
+    "statutory": false,
+    "customary": true,
+    "notes": "非法定，但夏季+冬季赏与（Bonus）为强市场惯例，合计通常相当于 2-4 个月工资。本模拟数据按'惯例性 13 薪 = 2 个月赏与'估算可选项。"
+  },
+  "annual_leave": {
+    "statutory_min_days": 10,
+    "market_typical_days": 12,
+    "notes": "入职满 6 个月且出勤率 80% 以上后享有 10 天，随工龄递增至 20 天。雇主有义务确保员工每年至少休 5 天。"
+  },
+  "probation": {
+    "max_months": null,
+    "typical_months": 3,
+    "notes": "法律无明确上限，市场惯例 3-6 个月；超过 1 年可能被法院认定为不合理。试用期内解雇同样受解雇权滥用法理约束。"
+  },
+  "termination_notice": {
+    "rules": [
+      { "tenure": "所有员工", "notice": "30 天（或支付 30 天平均工资的解雇预告手当）" }
+    ],
+    "notes": "日本解雇门槛极高：解雇须有客观合理事由并符合社会通常观念，否则无效。方案中应提示解雇风险。"
+  },
+  "minimum_wage": {
+    "monthly": 185000,
+    "notes": "按东京都时薪 1163 JPY × 160 小时估算，本模拟数据取 185,000 JPY/月。"
+  },
+  "income_tax_brackets_annual": [
+    { "up_to": 1950000, "rate": 0.05 },
+    { "up_to": 3300000, "rate": 0.1 },
+    { "up_to": 6950000, "rate": 0.2 },
+    { "up_to": 9000000, "rate": 0.23 },
+    { "up_to": 18000000, "rate": 0.33 },
+    { "up_to": 40000000, "rate": 0.4 },
+    { "up_to": null, "rate": 0.45 }
+  ],
+  "public_holidays_per_year": 16,
+  "standard_working_hours_per_week": 40
+}

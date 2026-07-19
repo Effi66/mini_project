@@ -1,0 +1,60 @@
+{
+  "country": "Philippines",
+  "country_code": "PH",
+  "currency": "PHP",
+  "employer_contributions": [
+    {
+      "name": "SSS 社会保障（雇主缴纳）",
+      "rate": 0.1,
+      "monthly_salary_cap": 35000,
+      "notes": "雇主缴纳 10%，缴费基数上限 35,000 PHP/月（本模拟数据简化为线性费率，忽略档位表）。"
+    },
+    {
+      "name": "PhilHealth 医疗保险（雇主缴纳）",
+      "rate": 0.025,
+      "monthly_salary_cap": 100000,
+      "notes": "总费率 5%，雇主雇员各半；基数上限 100,000 PHP/月。"
+    },
+    {
+      "name": "Pag-IBIG 住房公积金（雇主缴纳）",
+      "rate": 0.02,
+      "monthly_salary_cap": 10000,
+      "notes": "雇主缴纳 2%，基数上限 10,000 PHP/月。"
+    }
+  ],
+  "thirteenth_month": {
+    "statutory": true,
+    "customary": true,
+    "notes": "第 13 月薪为法定强制（Presidential Decree No. 851）：所有领薪员工均须在每年 12 月 24 日前获得，金额为当年基本工资总额的 1/12。不发放属违法。"
+  },
+  "annual_leave": {
+    "statutory_min_days": 5,
+    "market_typical_days": 15,
+    "notes": "法定仅 5 天服务激励假（SIL，可用于事假/病假），市场惯例另给 10-15 天带薪年假。"
+  },
+  "probation": {
+    "max_months": 6,
+    "typical_months": 6,
+    "notes": "法定上限 6 个月。试用期满未被解雇即自动转为正式员工。"
+  },
+  "termination_notice": {
+    "rules": [
+      { "tenure": "所有员工", "notice": "30 天（书面通知员工及劳动部 DOLE）" }
+    ],
+    "notes": "解雇需符合法定正当事由（just cause / authorized cause），authorized cause 情形需支付遣散费。"
+  },
+  "minimum_wage": {
+    "monthly": 14560,
+    "notes": "按大马尼拉地区非农业日薪 645 PHP 折算（645 × 22.57 个工作日 ≈ 14,560 PHP/月），本模拟数据取整。"
+  },
+  "income_tax_brackets_annual": [
+    { "up_to": 250000, "rate": 0.0 },
+    { "up_to": 400000, "rate": 0.15 },
+    { "up_to": 800000, "rate": 0.2 },
+    { "up_to": 2000000, "rate": 0.25 },
+    { "up_to": 8000000, "rate": 0.3 },
+    { "up_to": null, "rate": 0.35 }
+  ],
+  "public_holidays_per_year": 18,
+  "standard_working_hours_per_week": 48
+}

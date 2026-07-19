@@ -1,0 +1,71 @@
+{
+  "country": "Indonesia",
+  "country_code": "ID",
+  "currency": "IDR",
+  "employer_contributions": [
+    {
+      "name": "BPJS 养老储蓄 JHT（雇主缴纳）",
+      "rate": 0.037,
+      "monthly_salary_cap": null,
+      "notes": "无基数上限。"
+    },
+    {
+      "name": "BPJS 养老金 JP（雇主缴纳）",
+      "rate": 0.02,
+      "monthly_salary_cap": 10042300,
+      "notes": "缴费基数有上限（本模拟数据固定为 10,042,300 IDR/月）。"
+    },
+    {
+      "name": "BPJS 工伤保险 JKK（雇主缴纳）",
+      "rate": 0.0054,
+      "monthly_salary_cap": null,
+      "notes": "费率按行业风险等级 0.24%-1.74%，办公室岗位按低风险 0.54% 计。"
+    },
+    {
+      "name": "BPJS 死亡保险 JKM（雇主缴纳）",
+      "rate": 0.003,
+      "monthly_salary_cap": null,
+      "notes": "无基数上限。"
+    },
+    {
+      "name": "BPJS 医疗保险（雇主缴纳）",
+      "rate": 0.04,
+      "monthly_salary_cap": 12000000,
+      "notes": "缴费基数上限 12,000,000 IDR/月。"
+    }
+  ],
+  "thirteenth_month": {
+    "statutory": true,
+    "customary": true,
+    "notes": "THR（宗教节日津贴）为法定强制：工作满 1 年的员工须在宗教节日前至少 7 天发放 1 个月工资；不满 1 年按比例发放。不发放属违法。"
+  },
+  "annual_leave": {
+    "statutory_min_days": 12,
+    "market_typical_days": 12,
+    "notes": "工作满 12 个月后享有法定 12 天年假。"
+  },
+  "probation": {
+    "max_months": 3,
+    "typical_months": 3,
+    "notes": "法定上限 3 个月，且仅适用于无固定期限合同（PKWTT）；固定期限合同（PKWT）不允许设试用期。试用期工资不得低于最低工资。"
+  },
+  "termination_notice": {
+    "rules": [
+      { "tenure": "所有员工", "notice": "至少 14 个工作日" }
+    ],
+    "notes": "印尼解雇成本高：法定遣散费（severance）+ 工龄奖金（service pay）+ 权利补偿，最高可达数月工资。本模拟数据要求方案中提示遣散成本风险即可，不要求精确计算。"
+  },
+  "minimum_wage": {
+    "monthly": 5396761,
+    "notes": "按雅加达省标准，本模拟数据取 5,396,761 IDR/月。各省差异大。"
+  },
+  "income_tax_brackets_annual": [
+    { "up_to": 60000000, "rate": 0.05 },
+    { "up_to": 250000000, "rate": 0.15 },
+    { "up_to": 500000000, "rate": 0.25 },
+    { "up_to": 5000000000, "rate": 0.3 },
+    { "up_to": null, "rate": 0.35 }
+  ],
+  "public_holidays_per_year": 16,
+  "standard_working_hours_per_week": 40
+}
