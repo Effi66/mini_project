@@ -115,16 +115,16 @@
 - [x] 文档说明确定性成本计算边界。
 - [x] 文档说明当前 fixture 规模下先使用结构化政策检索，而不是 vector RAG 的原因。
 - [x] 运行 `docker compose config`。
-- [ ] 提交节点：`git add .env.example README.md docker-compose.yml backend frontend docs && git commit -m "docs: add one-command runtime"`
+- [x] 提交节点：`git add .env.example README.md docker-compose.yml backend frontend docs && git commit -m "docs: add one-command runtime"`
 
 ## Git Node 9: 最终验证
 
-- [ ] 运行 backend tests。
-- [ ] 运行 frontend tests。
-- [ ] 运行 Docker Compose startup。
-- [ ] 手动验证 Singapore happy path。
-- [ ] 手动验证 Vietnam compliance-conflict path。
-- [ ] 手动验证 Singapore/Vietnam comparison path。
-- [ ] 检查最终 UI 是否客户可读。
-- [ ] 检查最终 API 输出是否覆盖 citation。
-- [ ] 提交节点：`git add . && git commit -m "test: verify global employment agent"`
+- [x] 运行 backend tests。
+- [x] 运行 frontend tests。
+- [x] 运行 Docker Compose startup。（`docker compose up --build -d` 已成功构建并启动 backend/frontend 容器。）
+- [x] 手动验证 Singapore happy path。
+- [x] 手动验证 Vietnam compliance-conflict path。
+- [x] 手动验证 Singapore/Vietnam comparison path。
+- [x] 检查最终 UI 是否客户可读。
+- [x] 检查最终 API 输出是否覆盖 citation。
+- [ ] 提交节点：`git add docs && git commit -m "test: verify global employment agent"`
