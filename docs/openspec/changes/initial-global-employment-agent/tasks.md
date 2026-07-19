@@ -8,21 +8,21 @@
 - [x] 创建初始变更提案 `docs/openspec/changes/initial-global-employment-agent/proposal.md`。
 - [x] 创建初始变更设计 `docs/openspec/changes/initial-global-employment-agent/design.md`。
 - [x] 创建实现任务清单 `docs/openspec/changes/initial-global-employment-agent/tasks.md`。
-- [ ] 提交节点：`git add desc.md data docs && git commit -m "docs: add project spec baseline"`
+- [x] 提交节点：`git add desc.md data docs && git commit -m "docs: add project spec baseline"`
 
 ## Git Node 2: Backend 骨架和 Policy Repository
 
-- [ ] 创建 `backend/pyproject.toml`，包含 FastAPI、Uvicorn、Pydantic、pytest 和 Ruff 依赖。
-- [ ] 创建 `backend/app/main.py`，包含 FastAPI app 构造和 health route。
-- [ ] 创建 `backend/app/core/config.py`，配置 data directory 和 agent mode。
-- [ ] 创建 `backend/app/core/errors.py`，定义 typed domain exceptions。
-- [ ] 创建 `backend/app/models/policy.py`，定义 policy fixture 的 Pydantic models。
-- [ ] 创建 `backend/app/domain/policy_repository.py`，加载 `data/*.json` 并解析国家别名。
-- [ ] 创建 `backend/app/domain/citations.py`，构造 citation 对象。
-- [ ] 创建 `backend/app/api/routes_countries.py`，提供 `GET /api/countries` 和 `GET /api/policies/{country}`。
-- [ ] 创建 `backend/tests/test_policy_repository.py`。
-- [ ] 运行 `pytest backend/tests/test_policy_repository.py -v`。
-- [ ] 提交节点：`git add backend && git commit -m "feat: add policy repository"`
+- [x] 创建 `backend/pyproject.toml`，包含 FastAPI、Uvicorn、Pydantic、pytest 和 Ruff 依赖。
+- [x] 创建 `backend/app/main.py`，包含 FastAPI app 构造和 health route。
+- [x] 创建 `backend/app/core/config.py`，配置 data directory 和 agent mode。
+- [x] 创建 `backend/app/core/errors.py`，定义 typed domain exceptions。
+- [x] 创建 `backend/app/models/policy.py`，定义 policy fixture 的 Pydantic models。
+- [x] 创建 `backend/app/domain/policy_repository.py`，加载 `data/*.json` 并解析国家别名。
+- [x] 创建 `backend/app/domain/citations.py`，构造 citation 对象。
+- [x] 创建 `backend/app/api/routes_countries.py`，提供 `GET /api/countries` 和 `GET /api/policies/{country}`。
+- [x] 创建 `backend/tests/test_policy_repository.py`。
+- [x] 运行 `pytest backend/tests/test_policy_repository.py -v`。
+- [ ] 提交节点：`git add .gitignore backend docs && git commit -m "feat: add policy repository"`
 
 ## Git Node 3: Cost Calculator
 
@@ -128,4 +128,3 @@
 - [ ] 检查最终 UI 是否客户可读。
 - [ ] 检查最终 API 输出是否覆盖 citation。
 - [ ] 提交节点：`git add . && git commit -m "test: verify global employment agent"`
-
