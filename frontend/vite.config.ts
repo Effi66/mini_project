@@ -3,11 +3,15 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
+declare const process: { env: Record<string, string | undefined> };
+
+const backendProxyTarget = process.env.VITE_BACKEND_PROXY_TARGET ?? "http://localhost:8000";
+
 const config = {
   plugins: [react()],
   server: {
     proxy: {
-      "/api": "http://localhost:8000"
+      "/api": backendProxyTarget
     }
   },
   test: {

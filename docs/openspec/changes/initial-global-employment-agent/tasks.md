@@ -100,22 +100,22 @@
 - [x] 添加 Singapore、Vietnam 合规冲突、Singapore/Vietnam 对比三个示例 prompt。
 - [x] 添加 frontend tests，覆盖成本表和合规结果渲染。
 - [x] 运行 `npm test -- --run`。
-- [ ] 提交节点：`git add frontend docs && git commit -m "feat: build employment agent UI"`
+- [x] 提交节点：`git add frontend docs && git commit -m "feat: build employment agent UI"`
 
 ## Git Node 8: Docker Compose 和 README
 
-- [ ] 创建 `backend/Dockerfile`。
-- [ ] 创建 `frontend/Dockerfile`。
-- [ ] 创建根目录 `docker-compose.yml`。
-- [ ] 创建根目录 `.env.example`。
-- [ ] 创建或更新 `README.md`。
-- [ ] 文档说明一条命令启动：`docker compose up --build`。
-- [ ] 文档说明 `AGENT_MODE=deterministic` 和 `AGENT_MODE=llm`。
-- [ ] 文档说明政策来源边界。
-- [ ] 文档说明确定性成本计算边界。
-- [ ] 文档说明当前 fixture 规模下先使用结构化政策检索，而不是 vector RAG 的原因。
-- [ ] 运行 `docker compose config`。
-- [ ] 提交节点：`git add README.md .env.example docker-compose.yml backend/Dockerfile frontend/Dockerfile && git commit -m "docs: add one-command runtime"`
+- [x] 创建 `backend/Dockerfile`。
+- [x] 创建 `frontend/Dockerfile`。
+- [x] 创建根目录 `docker-compose.yml`。
+- [x] 创建根目录 `.env.example`。
+- [x] 创建或更新 `README.md`。
+- [x] 文档说明一条命令启动：`docker compose up --build`。
+- [x] 文档说明 `AGENT_MODE=deterministic` 和 `AGENT_MODE=llm`。
+- [x] 文档说明政策来源边界。
+- [x] 文档说明确定性成本计算边界。
+- [x] 文档说明当前 fixture 规模下先使用结构化政策检索，而不是 vector RAG 的原因。
+- [x] 运行 `docker compose config`。
+- [ ] 提交节点：`git add .env.example README.md docker-compose.yml backend frontend docs && git commit -m "docs: add one-command runtime"`
 
 ## Git Node 9: 最终验证
 
