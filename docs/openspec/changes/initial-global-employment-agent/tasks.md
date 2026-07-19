@@ -66,20 +66,20 @@
 - [x] 创建 `backend/app/api/routes_agent.py`，提供 `POST /api/agent/hire`。
 - [x] 创建 `backend/tests/test_agent_orchestrator.py`。
 - [x] 运行 `pytest backend/tests/test_agent_orchestrator.py -v`。
-- [ ] 提交节点：`git add backend docs && git commit -m "feat: orchestrate hiring agent"`
+- [x] 提交节点：`git add backend docs && git commit -m "feat: orchestrate hiring agent"`
 
 ## Git Node 6: SSE Trace Streaming
 
-- [ ] 在 `backend/app/api/routes_agent.py` 中添加 SSE event generator。
-- [ ] 发送 `agent.started`。
-- [ ] 发送 `agent.step`。
-- [ ] 发送 `tool.called`。
-- [ ] 发送 `tool.completed`。
-- [ ] 发送 `agent.completed`。
-- [ ] 对结构化失败发送 `agent.error`。
-- [ ] 添加 backend tests，验证 event 顺序。
-- [ ] 运行 `pytest backend/tests/test_agent_orchestrator.py -v`。
-- [ ] 提交节点：`git add backend && git commit -m "feat: stream agent trace events"`
+- [x] 在 `backend/app/api/routes_agent.py` 中添加 SSE event generator。
+- [x] 发送 `agent.started`。
+- [x] 发送 `agent.step`。
+- [x] 发送 `tool.called`。
+- [x] 发送 `tool.completed`。
+- [x] 发送 `agent.completed`。
+- [x] 对结构化失败发送 `agent.error`。
+- [x] 添加 backend tests，验证 event 顺序。
+- [x] 运行 `pytest backend/tests/test_agent_orchestrator.py -v`。
+- [ ] 提交节点：`git add backend docs && git commit -m "feat: stream agent trace events"`
 
 ## Git Node 7: React Frontend
 

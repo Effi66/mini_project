@@ -1,3 +1,5 @@
+import json
+
 from app.agent.schemas import AgentTraceStep
 
 
@@ -13,3 +15,7 @@ def tool_completed(name: str, tool_name: str, message: str) -> AgentTraceStep:
         message=message,
     )
 
+
+def format_sse_event(event: str, data: dict) -> str:
+    payload = json.dumps(data, ensure_ascii=False)
+    return f"event: {event}\ndata: {payload}\n\n"
