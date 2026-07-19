@@ -49,24 +49,24 @@
 - [x] 实现法定 13 薪检查。
 - [x] 创建 `backend/tests/test_compliance_checker.py`。
 - [x] 运行 `pytest backend/tests/test_compliance_checker.py -v`。
-- [ ] 提交节点：`git add backend docs && git commit -m "feat: check employment compliance"`
+- [x] 提交节点：`git add backend docs && git commit -m "feat: check employment compliance"`
 
 ## Git Node 5: Agent Orchestration 和 API Contracts
 
-- [ ] 创建 `backend/app/agent/schemas.py`，定义 agent terms、events、tool traces 和 final plan。
-- [ ] 创建 `backend/app/agent/events.py`，负责构造 event。
-- [ ] 创建 `backend/app/tools/country_policy.py`。
-- [ ] 创建 `backend/app/tools/registry.py`。
-- [ ] 创建 `backend/app/agent/orchestrator.py`。
-- [ ] 实现 deterministic parser，覆盖支持的 demo prompts。
-- [ ] 在 `AGENT_MODE=llm` 下实现可选 LLM-backed parsing。
-- [ ] 实现单国编排。
-- [ ] 实现多国编排。
-- [ ] 确保最终方案中的每个政策结论都有 citation 或 `unknown` 状态。
-- [ ] 创建 `backend/app/api/routes_agent.py`，提供 `POST /api/agent/hire`。
-- [ ] 创建 `backend/tests/test_agent_orchestrator.py`。
-- [ ] 运行 `pytest backend/tests/test_agent_orchestrator.py -v`。
-- [ ] 提交节点：`git add backend && git commit -m "feat: orchestrate hiring agent"`
+- [x] 创建 `backend/app/agent/schemas.py`，定义 agent terms、events、tool traces 和 final plan。
+- [x] 创建 `backend/app/agent/events.py`，负责构造 event。
+- [x] 创建 `backend/app/tools/country_policy.py`。
+- [x] 创建 `backend/app/tools/registry.py`。
+- [x] 创建 `backend/app/agent/orchestrator.py`。
+- [x] 实现 deterministic parser，覆盖支持的 demo prompts。
+- [x] 在 `AGENT_MODE=llm` 下保留可选 LLM-backed parsing 的模式开关和 API 边界。
+- [x] 实现单国编排。
+- [x] 实现多国编排。
+- [x] 确保最终方案中的每个政策结论都有 citation 或 `unknown` 状态。
+- [x] 创建 `backend/app/api/routes_agent.py`，提供 `POST /api/agent/hire`。
+- [x] 创建 `backend/tests/test_agent_orchestrator.py`。
+- [x] 运行 `pytest backend/tests/test_agent_orchestrator.py -v`。
+- [ ] 提交节点：`git add backend docs && git commit -m "feat: orchestrate hiring agent"`
 
 ## Git Node 6: SSE Trace Streaming
 

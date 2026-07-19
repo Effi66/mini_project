@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+import os
 from pathlib import Path
 
 
@@ -12,6 +13,6 @@ def default_data_dir() -> Path:
     return Path(__file__).resolve().parents[3] / "data"
 
 
-def build_settings(data_dir: Path | None = None, agent_mode: str = "deterministic") -> Settings:
-    return Settings(data_dir=data_dir or default_data_dir(), agent_mode=agent_mode)
-
+def build_settings(data_dir: Path | None = None, agent_mode: str | None = None) -> Settings:
+    resolved_agent_mode = agent_mode or os.getenv("AGENT_MODE", "deterministic")
+    return Settings(data_dir=data_dir or default_data_dir(), agent_mode=resolved_agent_mode)
