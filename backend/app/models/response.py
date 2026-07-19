@@ -44,3 +44,20 @@ class EmploymentCostBreakdown(BaseModel):
     annual: AnnualCostBreakdown
     bonus: BonusBreakdown
 
+
+class ComplianceCheck(BaseModel):
+    item: str
+    status: str
+    requested: str | None
+    required: str | None
+    citation: Citation
+    recommendation: str | None
+
+
+class ComplianceResult(BaseModel):
+    country: str
+    country_code: str
+    currency: str
+    overall_status: str
+    checks: list[ComplianceCheck]
+

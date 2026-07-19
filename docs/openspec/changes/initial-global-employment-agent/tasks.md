@@ -34,22 +34,22 @@
 - [x] 使用 normalized fixture values 实现法定和市场惯例奖金分摊。
 - [x] 创建 `backend/tests/test_cost_calculator.py`。
 - [x] 运行 `pytest backend/tests/test_cost_calculator.py -v`。
-- [ ] 提交节点：`git add backend docs && git commit -m "feat: calculate employment cost"`
+- [x] 提交节点：`git add backend docs && git commit -m "feat: calculate employment cost"`
 
 ## Git Node 4: Compliance Checker
 
-- [ ] 创建 `backend/app/domain/compliance_checker.py`。
-- [ ] 创建 `backend/app/tools/compliance.py`。
-- [ ] 在 `backend/app/models/request.py` 中创建结构化 hiring terms request models。
-- [ ] 实现最低工资检查。
-- [ ] 实现试用期检查。
-- [ ] 实现年假检查。
-- [ ] 实现工作时长检查。
-- [ ] 实现解雇通知期检查。
-- [ ] 实现法定 13 薪检查。
-- [ ] 创建 `backend/tests/test_compliance_checker.py`。
-- [ ] 运行 `pytest backend/tests/test_compliance_checker.py -v`。
-- [ ] 提交节点：`git add backend && git commit -m "feat: check employment compliance"`
+- [x] 创建 `backend/app/domain/compliance_checker.py`。
+- [x] 创建 `backend/app/tools/compliance.py`。
+- [x] 在 `backend/app/models/request.py` 中创建结构化 hiring terms request models。
+- [x] 实现最低工资检查。
+- [x] 实现试用期检查。
+- [x] 实现年假检查。
+- [x] 实现工作时长检查。
+- [x] 实现解雇通知期检查。
+- [x] 实现法定 13 薪检查。
+- [x] 创建 `backend/tests/test_compliance_checker.py`。
+- [x] 运行 `pytest backend/tests/test_compliance_checker.py -v`。
+- [ ] 提交节点：`git add backend docs && git commit -m "feat: check employment compliance"`
 
 ## Git Node 5: Agent Orchestration 和 API Contracts
 
